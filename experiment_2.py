@@ -46,7 +46,10 @@ def clean_whitespace(text: str) -> str:
 
 # CONFIGURATION
 
-use_data = 'chicago_9000'
+#### OBS
+# set this before you run::
+use_data = 'chicago_9000' # set it to: 'oldman' or 'dalloway' or 'chicago_9000'
+####
 
 # Model name
 model_name = "openai/clip-vit-base-patch32"
