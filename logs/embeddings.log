@@ -1,0 +1,8 @@
+2025-02-07T17:47:29.436314+0100 INFO Loading CLIP model and processor: openai/clip-vit-base-patch32
+2025-02-07T17:47:30.944433+0100 INFO Using device: cpu
+2025-02-07T17:47:30.945102+0100 INFO Processing input texts.
+2025-02-07T17:47:30.964846+0100 INFO Generating embeddings.
+2025-02-07T17:47:41.315030+0100 INFO Loading CLIP model and processor: openai/clip-vit-base-patch32
+2025-02-07T17:47:42.736027+0100 INFO Using device: cpu
+2025-02-07T17:47:42.736636+0100 INFO Processing input texts.
+2025-02-07T17:47:42.754925+0100 INFO Generating embeddings.

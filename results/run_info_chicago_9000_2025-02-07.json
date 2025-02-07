@@ -1,0 +1,72 @@
+{
+    "date": "2025-02-07",
+    "model": "openai/clip-vit-base-patch32",
+    "used_data": "chicago_9000",
+    "sample_texts_len": 9000,
+    "sample_texts_first": "Somebody as big and fat as you are around the middle just cant bend over as far as it takes to wash your toes, so Im gonna wash em for you.",
+    "sample_texts_last": "Startled, Julia began to scream and didnt stop this time, despite Brians efforts to console her, cooing his sympathy, holding her cheek to his, begging her to smile.",
+    "features_used": [
+        "norm",
+        "entropy",
+        "sparsity",
+        "imag",
+        "visual",
+        "concrete",
+        "text",
+        "embedding"
+    ],
+    "correlation_matrix": {
+        "norm": {
+            "norm": 1.0,
+            "entropy": -0.97,
+            "sparsity": -0.98,
+            "imag": -0.31,
+            "visual": -0.37,
+            "concrete": -0.36
+        },
+        "entropy": {
+            "norm": -0.97,
+            "entropy": 1.0,
+            "sparsity": 0.99,
+            "imag": 0.29,
+            "visual": 0.35,
+            "concrete": 0.34
+        },
+        "sparsity": {
+            "norm": -0.98,
+            "entropy": 0.99,
+            "sparsity": 1.0,
+            "imag": 0.33,
+            "visual": 0.38,
+            "concrete": 0.38
+        },
+        "imag": {
+            "norm": -0.31,
+            "entropy": 0.29,
+            "sparsity": 0.33,
+            "imag": 1.0,
+            "visual": 0.96,
+            "concrete": 0.97
+        },
+        "visual": {
+            "norm": -0.37,
+            "entropy": 0.35,
+            "sparsity": 0.38,
+            "imag": 0.96,
+            "visual": 1.0,
+            "concrete": 0.99
+        },
+        "concrete": {
+            "norm": -0.36,
+            "entropy": 0.34,
+            "sparsity": 0.38,
+            "imag": 0.97,
+            "visual": 0.99,
+            "concrete": 1.0
+        }
+    },
+    "least_imageable": "Arrhae iMnaeha tKhellian, daise hruhfe, Rekk Rheve ?",
+    "most_imageable": "they asked when the Heathen had learned to speak a few words of English in that awful way of theirs, enough to pretend he had converted to Christ, and he told them, Like a fox, into the woods, we talk and him go like fox into woods, gone, big smile on face, smile like fox, Horse told them, and they all looked at each other and nodded, yes, how true, how sad for his wife and son, to desert them at their hour of greatest need and dependency, but they forgot, they forgot that I saw your father leave, Josiah, that morning, the dawning of our second day in this wilderness, for we were all camped out on the shore of the river, near where Dame Edna now lives, very early in the morning, just at sunrise, and the mist was floating low over the dark, nearly still water, and I opened my eyes and saw your father rise from his pallet beside me, and before he left my side, he whispered that he wanted to look at the mist and the still water and watch the light change as the sun rose, for your father was a tender man, not a coward, a deeply tender and Godfearing man, though he was not a man who talked easily of his Love of God, not like these others who now surround us, he was a true Christian, a quiet man tender enough to wish to see the sunrise his second day in the wilderness, in the valley where he had chosen to build his home and live out a peaceful Godfearing life in the comfort and love of his family, and so eager was he to watch the light change as the sun rose over the river that he walked away from the camp alone, carrying only his musket, doubtless in the event that he saw some game, a deer or rabbit, that he could bring back to share in camp with the company of people he thought were his friends, all of them people from the town he had been born and raised in, people he had known all his life and with whom he had joined in this venture into the wilderness, and I lay there next to his pallet with you at my breast, and I smiled up into his broad face, and surely, as surely as God is in His Heaven, as surely as anything on this earth exists, I would have known if that man was going to leave us, was going to walk off and disappear into the forests, leaving behind his wife and baby, alone, without money or possessions, with nothing but a sevenhundredacre plot of rock and treecovered land in the wilderness, I would have known that, such things cannot be hidden, they are too horrible, too inhuman, for me not to have known that, a mans wife knows certain things about him that no one else may ever know, and oh, Josiah, oh, my son, I would have known if your father, that early morning when he stepped into the bushes at the edge of the clearing by the river, were deserting us, were leaving us here to choose between scratching pitifully in desolate and deprived isolation on this land or enslaving ourselves to the charity of a village that would sooner believe an Indians version of a tale than a mans own true wifes version, and I saw his face as he left my side, Josiah, I saw his face, remember that, for thats how I know the true story of what actually happened once his squareshouldered form had disappeared into the tangle of bushes at the edge of the clearing, I know what happened then, I know that he was set upon in cunning silence by Horse and a band of bloodthirsty Abenooki, and I know that your father, instantly deciding that the Indians would be able to overcome and slay the party of sleeping Christians, chose to run instead of fight, chose to lead that pack of savages as far as he could from the place where his friends, his young wife, and most important, his baby son, lay sleeping, and so, indeed, he ran, a strong young man who, you may enjoy knowing, was a wellknown runner, once said to be the best longdistance runner in the entire colony of Massachusetts, a man who could run all day long, from Hopkinton Green all the way to Boston Common once in only a little over two hours, thought by some to be a miracle, thus when your father decided to run from those savages, he was not behaving in a cowardly manner, oh, no, he was instead choosing to employ against them the strongest weapon he owned, his ability as a runner, which he was to use so effectively that no one would ever know of his decision, of his great bravery and love, so that the very people he saved from death, and worse, were later to deride your fathers memory and to pity me, pity, pity a woman and child they should honor instead, as the wife and son of a hero, the only hero this village has so far produced and probably the only one it ever will produce, unless it be a son of Lemuel Stark or a son destined to spring from that seed in some future time, a hero who will know the truth of Lemuel Starks life and death and therefore will not believe the fiction, who will know instead that Lemuel Stark courageously led the ravening pack of Abenookis along the river and away from the camp all the way to Blue Job Mountain, where, tireless, he ran ahead of the savages, who, like hounds with one replacing the other as the lead hound grew tired, pursued screaming behind with axes and knives and other murderous devices brandished above their heads, led that pack up the side of the mountain that towered above the very plot of land he had chosen for a homesite, led them up the tortuously brambled and tangled path to the craggy top, where no trees grew, where the cold winds scraped every living thing away, scourging it, leaving only boulders, crags, and the sky aboveand there, at last, he turned and faced his pursuers, for there was nowhere farther to run unless he could leap into the sky, and to accomplish that, he needed his murderers aid, which they eagerly provided, first the brutal, sly Horse, then each of his followers, like Brutus and the vicious Romans, one after the other sinking his dagger into your fathers body, a dozen, a hundred blows, each of them mortal, so that after the first blow your fathers soul had flown away to Heaven, releasing him from his torn and bleeding body, leaving behind, atop the mountain, a pack of satanic savages tearing at a mere chunk of flesh, while far below, by the river, a gathering of Christians were beginning to wonder where their friend had gone, and a wife was beginning to worry that something terrible had happened to him, and an infant son was beginning to wake hungrily from his peacefulsleep Chapter 3 Three Tales from His Childhood TRUTHFULLY, I planned from the beginning to bring into the narrative at precisely this point Rochelles version of three tales told to her by her father when she was a child.",
+    "least_norm": "An old man in a collarless striped shirt and an unbuttoned vest slowly rubbed chalk on the tip of his cue and yawned, showing the black gaps in his teeth.",
+    "most_norm": "Theres an example for you, by the way."
+}

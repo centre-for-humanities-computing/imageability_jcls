@@ -1,0 +1,21 @@
+numpy
+seaborn
+matplotlib
+pandas
+json
+spacy
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0.tar.gz
+re
+os
+
+datetime
+
+scipy
+scikit-learn
+
+transformers
+torch
+
+loguru
+pathlib
+typing
