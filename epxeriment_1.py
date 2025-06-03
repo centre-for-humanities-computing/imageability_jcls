@@ -81,7 +81,13 @@ def prob(old_embedding):
 def calculate_entropy(embedding):
     return entropy(prob(embedding))
 
+def softmax_entropy(embedding, temperature=1.0):
+    exp_vals = np.exp(embedding / temperature)
+    probs = exp_vals / np.sum(exp_vals)
+    return entropy(probs)
+
 entry_entropy = [calculate_entropy(embedding) for embedding in entry_embeddings]
+#entry_entropy = [softmax_entropy(embedding) for embedding in entry_embeddings] # if we want to use softmax instead of the pseudo entropy
 
 # variance
 entry_variance = np.var(entry_embeddings, axis=1)
