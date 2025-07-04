@@ -118,13 +118,19 @@ df_entries['imag C'] = [dict_cortese[word] if word in dict_cortese.keys() else n
 df_entries['visual'] = [dict_sensori[word] for word in words]
 df_entries['concrete'] = [dict_conc[word] if word in dict_conc.keys() else np.nan for word in words]
 
+# %%
+df_entries = df_entries[['norm', 'entropy', 'imag',
+       'visual', 'concrete']]
+
+# %%
 # make a heatmap
 corr_df = df_entries.corr(method='spearman')
 
-plt.figure(figsize=(4.5, 4.5))
+plt.figure(figsize=(4, 3))
 sns.heatmap(corr_df, annot=True, cbar=False, cmap='coolwarm')
 # rotate the x-axis labels
 plt.xticks(rotation=50)
+plt.yticks(rotation=360)
 # add space so we dont cut the labels
 plt.tight_layout(pad=1.0)
 plt.savefig('figs/corr_dictionary_entries.png')

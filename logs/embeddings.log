@@ -6,3 +6,17 @@
 2025-02-07T17:47:42.736027+0100 INFO Using device: cpu
 2025-02-07T17:47:42.736636+0100 INFO Processing input texts.
 2025-02-07T17:47:42.754925+0100 INFO Generating embeddings.
+2025-07-03T16:13:01.249965+0200 INFO Loading CLIP model and processor: openai/clip-vit-base-patch32
+2025-07-03T16:13:03.624942+0200 INFO Using device: cpu
+2025-07-03T16:13:03.625494+0200 INFO Processing input texts.
+2025-07-03T16:13:03.635007+0200 INFO Generating embeddings.
+2025-07-03T16:13:04.135906+0200 INFO Creating directory: data/embeddings/imagists__openai
+2025-07-03T16:13:04.150779+0200 INFO Saved embeddings to data/embeddings/imagists__openai/clip-vit-base-patch32_2025-07-03.json
+2025-07-04T10:39:11.026356+0200 INFO Loading CLIP model and processor: openai/clip-vit-base-patch32
+2025-07-04T10:39:12.977400+0200 INFO Using device: cpu
+2025-07-04T10:39:12.977942+0200 INFO Processing input texts.
+2025-07-04T10:39:12.997918+0200 INFO Generating embeddings.
+2025-07-04T10:40:08.375202+0200 INFO Loading CLIP model and processor: openai/clip-vit-base-patch32
+2025-07-04T10:40:10.104381+0200 INFO Using device: cpu
+2025-07-04T10:40:10.104878+0200 INFO Processing input texts.
+2025-07-04T10:40:10.123559+0200 INFO Generating embeddings.
