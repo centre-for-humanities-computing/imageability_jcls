@@ -1,0 +1,72 @@
+{
+    "date": "2025-12-04",
+    "model": "openai/clip-vit-base-patch32",
+    "used_data": "dalloway",
+    "sample_texts_len": 3578,
+    "sample_texts_first": "Mrs. Dalloway said she would buy the flowers herself.",
+    "sample_texts_last": "For there she was.",
+    "features_used": [
+        "norm",
+        "entropy",
+        "sparsity",
+        "imag",
+        "visual",
+        "concrete",
+        "text",
+        "embedding"
+    ],
+    "correlation_matrix": {
+        "norm": {
+            "norm": 1.0,
+            "entropy": -0.96,
+            "sparsity": -0.98,
+            "imag": -0.44,
+            "visual": -0.46,
+            "concrete": -0.46
+        },
+        "entropy": {
+            "norm": -0.96,
+            "entropy": 1.0,
+            "sparsity": 0.99,
+            "imag": 0.44,
+            "visual": 0.45,
+            "concrete": 0.46
+        },
+        "sparsity": {
+            "norm": -0.98,
+            "entropy": 0.99,
+            "sparsity": 1.0,
+            "imag": 0.45,
+            "visual": 0.47,
+            "concrete": 0.48
+        },
+        "imag": {
+            "norm": -0.44,
+            "entropy": 0.44,
+            "sparsity": 0.45,
+            "imag": 1.0,
+            "visual": 0.98,
+            "concrete": 0.98
+        },
+        "visual": {
+            "norm": -0.46,
+            "entropy": 0.45,
+            "sparsity": 0.47,
+            "imag": 0.98,
+            "visual": 1.0,
+            "concrete": 0.99
+        },
+        "concrete": {
+            "norm": -0.46,
+            "entropy": 0.46,
+            "sparsity": 0.48,
+            "imag": 0.98,
+            "visual": 0.99,
+            "concrete": 1.0
+        }
+    },
+    "least_imageable": "*",
+    "most_imageable": "And everywhere, though it was still so early, there was a beating, a stirring of galloping ponies, tapping of cricket bats; Lords, Ascot, Ranelagh and all the rest of it; wrapped in the soft mesh of the grey-blue morning air, which, as the day wore on, would unwind them, and set down on their lawns and pitches the bouncing ponies, whose forefeet just struck the ground and up they sprung, the whirling young men, and laughing girls in their transparent muslins who, even now, after dancing all night, were taking their absurd woolly dogs for a run; and even now, at this hour, discreet old dowagers were shooting out in their motor cars on errands of mystery; and the shopkeepers were fidgeting in their windows with their paste and diamonds, their lovely old sea-green brooches in eighteenth-century settings to tempt Americans (but one must economise, not buy things rashly for Elizabeth), and she, too, loving it as she did with an absurd and faithful passion, being part of it, since her people were courtiers once in the time of the Georges, she, too, was going that very night to kindle and illuminate; to give her party.",
+    "least_norm": "At Hyde Park Corner on a tub she stands preaching; shrouds herself in white and walks penitentially disguised as brotherly love through factories and parliaments; offers help, but desires power; smites out of her way roughly the dissentient, or dissatisfied; bestows her blessing on those who, looking upward, catch submissively from her eyes the light of their own.",
+    "most_norm": "Well, well!"
+}

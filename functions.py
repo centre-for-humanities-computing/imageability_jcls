@@ -5,6 +5,7 @@ import numpy as np
 from pathlib import Path
 from loguru import logger
 import datetime
+import re
 
 # for embeddings
 from transformers import CLIPProcessor, CLIPModel
@@ -12,6 +13,22 @@ from transformers import AutoModel
 from typing import List
 
 import torch
+
+# text processing
+def clean_whitespace(text: str) -> str:
+    # rm newline characters
+    text = text.replace('\n', ' ')
+    # multiple spaces -> single space
+    text = re.sub(r'\s+', ' ', text)
+    # rm spaces before punctuation
+    text = re.sub(r'\s+([.,!?;:])', r'\1', text)
+    # rm excess spaces after punctuation (.,!? etc.)
+    text = re.sub(r'([.,!?;:])\s+', r'\1 ', text)
+    # leading and trailing spaces
+    text = text.strip()
+    
+    return text
+
 
 # get embeddings
 logger.add("logs/embeddings.log", format="{time} {level} {message}", level="INFO")
@@ -60,7 +77,7 @@ def generate_clip_embeddings(
     # save embeddings if save path
     if save_name:
         date = datetime.datetime.now().strftime("%Y-%m-%d")  # get current date
-        save_path = Path(f"data/embeddings/{save_name}_{model_name}_{date}.json")
+        save_path = Path(f"data/embeddings/{save_name}.json")
 
         try:
             ensure_dir_exists(save_path.parent)  # Ensure directory exists

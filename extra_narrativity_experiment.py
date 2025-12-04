@@ -1,4 +1,8 @@
 # %%
+
+# this is to analyze the relationship between narrativity scores and imageability/visuality/concreteness
+# it's like an extra analysis to show the usefullness of the semantic concepts
+
 import pandas as pd
 # %%
 df = pd.read_csv('/Users/au324704/Downloads/annotated_dataset_401.csv')

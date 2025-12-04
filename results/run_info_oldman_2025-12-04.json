@@ -1,0 +1,72 @@
+{
+    "date": "2025-12-04",
+    "model": "openai/clip-vit-base-patch32",
+    "used_data": "oldman",
+    "sample_texts_len": 1928,
+    "sample_texts_first": "\"He was an old man who fished alone in a skiff in the Gulf Stream and he had gone eighty-four days now without taking a fish.",
+    "sample_texts_last": "The old man was dreaming about the lions.\"",
+    "features_used": [
+        "norm",
+        "entropy",
+        "sparsity",
+        "imag",
+        "visual",
+        "concrete",
+        "text",
+        "embedding"
+    ],
+    "correlation_matrix": {
+        "norm": {
+            "norm": 1.0,
+            "entropy": -0.97,
+            "sparsity": -0.99,
+            "imag": -0.61,
+            "visual": -0.63,
+            "concrete": -0.62
+        },
+        "entropy": {
+            "norm": -0.97,
+            "entropy": 1.0,
+            "sparsity": 0.99,
+            "imag": 0.57,
+            "visual": 0.59,
+            "concrete": 0.59
+        },
+        "sparsity": {
+            "norm": -0.99,
+            "entropy": 0.99,
+            "sparsity": 1.0,
+            "imag": 0.6,
+            "visual": 0.62,
+            "concrete": 0.61
+        },
+        "imag": {
+            "norm": -0.61,
+            "entropy": 0.57,
+            "sparsity": 0.6,
+            "imag": 1.0,
+            "visual": 0.98,
+            "concrete": 0.98
+        },
+        "visual": {
+            "norm": -0.63,
+            "entropy": 0.59,
+            "sparsity": 0.62,
+            "imag": 0.98,
+            "visual": 1.0,
+            "concrete": 0.99
+        },
+        "concrete": {
+            "norm": -0.62,
+            "entropy": 0.59,
+            "sparsity": 0.61,
+            "imag": 0.98,
+            "visual": 0.99,
+            "concrete": 1.0
+        }
+    },
+    "least_imageable": "\"Yes.",
+    "most_imageable": "After that he began to dream of the long yellow beach and he saw the first of the lions come down onto it in the early dark and then the other lions came and he rested his chin on the wood of the bows where the ship lay anchored with the evening off-shore breeze and he waited to see if there would be more lions and he was happy.",
+    "least_norm": "After that he settled the line across his shoulders in a new place and held it again with his left hand resting on the gunwale.",
+    "most_norm": "Come on and kill me."
+}

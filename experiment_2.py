@@ -7,18 +7,16 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import json
 import spacy
-import re
 import os 
+import re
 
 import datetime
 
 from scipy.stats import spearmanr
-from scipy.stats import skew, kurtosis
 from sklearn.preprocessing import StandardScaler
 from scipy.stats import entropy
 
-from functions import get_dict_scores
-from functions import generate_clip_embeddings
+from functions import get_dict_scores, generate_clip_embeddings, clean_whitespace
 
 from transformers import CLIPProcessor, CLIPModel
 import torch
@@ -27,20 +25,6 @@ import torch
 ### Second part of our study: we take the embeddings of 3 literary sets and
 # correlated embedding-based metrics with dictionary-based metrics
 
-# %%
-def clean_whitespace(text: str) -> str:
-    # rm newline characters
-    text = text.replace('\n', ' ')
-    # multiple spaces -> single space
-    text = re.sub(r'\s+', ' ', text)
-    # rm spaces before punctuation
-    text = re.sub(r'\s+([.,!?;:])', r'\1', text)
-    # rm excess spaces after punctuation (.,!? etc.)
-    text = re.sub(r'([.,!?;:])\s+', r'\1 ', text)
-    # leading and trailing spaces
-    text = text.strip()
-    
-    return text
 
 # %%
 
@@ -48,8 +32,8 @@ def clean_whitespace(text: str) -> str:
 
 #### OBS
 # set this before you run::
-use_data = 'chicago_9000' # set it to: 'oldman' or 'dalloway' or 'chicago_9000'
-####
+use_data = 'dalloway' # set it to: 'oldman' or 'dalloway' or 'chicago_9000'
+#### OBS
 
 # Model name
 model_name = "openai/clip-vit-base-patch32"
@@ -99,7 +83,7 @@ use_data_path = None
 for path in os.listdir('data/measures'):
     if use_data in str(path):
         use_data_path = path
-        print(f"Found data path: {use_data_path}")
+        print(f"Found data path for embeddings: {use_data_path}")
         break  # Exit the loop once the file is found
 
 if use_data_path:  # If a file was found, load it
@@ -146,13 +130,12 @@ if model == "openai/clip-vit-base-patch32":
     for path in os.listdir('data/embeddings'):
         if use_data in str(path):
             use_data_path = path
-            print(use_data_path)
+            print("found path for embeddings:", use_data_path)
             break
         else:
             use_data_path = None
 
     if use_data_path:
-        print(use_data_path)
         with open(f'data/embeddings/{use_data_path}', 'r') as f:
             text_embeddings = json.load(f)
             print('len of embeddings:', len(text_embeddings))
@@ -212,6 +195,7 @@ scaled_embeddings = scaler.fit_transform(np.array(text_embeddings))
 data['scaled_embedding'] = scaled_embeddings.tolist()
 
 data.head()
+
 
 # %%
 # describe the data (get means and SDs)
@@ -441,6 +425,7 @@ run_info['least_norm'] = df[df['norm'] == df['norm'].min()]['text'].values[0]
 run_info['most_norm'] = df[df['norm'] == df['norm'].max()]['text'].values[0]
 
 # save the run_info
+os.makedirs("results", exist_ok=True)  # added to ensure the folder exists
 with open(f'results/run_info_{use_data}_{run_info["date"]}.json', 'w') as f:
     json.dump(run_info, f, indent=4)
 
